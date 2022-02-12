@@ -3,14 +3,14 @@
 <Patch>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>//TerrainDef[defName = "Tile_Transhumanist"]/statBases</xpath>
+        <xpath>/Defs/TerrainDef[defName = "Tile_Transhumanist"]/statBases</xpath>
         <value>
             <Cleanliness>0.6</Cleanliness>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>//TerrainDef[defName="Tile_Transhumanist"]/costList/Steel</xpath>
+        <xpath>/Defs/TerrainDef[defName="Tile_Transhumanist"]/costList/Steel</xpath>
         <value>
             <Steel>16</Steel>
         </value>

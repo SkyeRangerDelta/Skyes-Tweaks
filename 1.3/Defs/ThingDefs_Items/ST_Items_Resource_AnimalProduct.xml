@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--Add unfert. turkey egg def-->
+
+<Defs>
+    <ThingDef ParentName="EggUnfertBase">
+        <defName>EggTurkeyUnfertilized</defName>
+        <label>turkey egg (unfert.)</label>
+        <description>An unfertilized turkey egg. It can be eaten raw, but it's much, much better cooked.</description>
+        <graphicData>
+            <color>(176,154,128)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>7.0</MarketValue>
+        </statBases>
+    </ThingDef>
+</Defs>

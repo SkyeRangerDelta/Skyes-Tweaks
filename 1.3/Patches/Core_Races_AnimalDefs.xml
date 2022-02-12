@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--Turkeys will lay unfertilized eggs-->
+
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Turkey"]/comps/li[@Class = "CompProperties_EggLayer"]</xpath>
+        <value>
+            <eggUnfertilizedDef>EggTurkeyUnfertilized</eggUnfertilizedDef>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Turkey"]/comps/li[@Class = "CompProperties_EggLayer"]/eggProgressUnfertilizedMax</xpath>
+    </Operation>
+</Patch>
+
+<!-- CompProperties_EggLayer -->
