@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/TerrainDef[defName = "Tile_Transhumanist"]/statBases</xpath>
+        <value>
+            <Cleanliness>0.6</Cleanliness>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/TerrainDef[defName="Tile_Transhumanist"]/costList/Steel</xpath>
+        <value>
+            <Steel>16</Steel>
+        </value>
+    </Operation>
+
+</Patch>
