@@ -1,32 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-
-
 <Defs>
+  <!--Add unfert. turkey egg def-->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>EggTurkeyUnfertilized</defName>
+    <label>turkey egg (unfert.)</label>
+    <description>An unfertilized turkey egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(176,154,128)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+  </ThingDef>
 
-	<!--Add unfert. turkey egg def-->
-    <ThingDef ParentName="EggUnfertBase">
-        <defName>EggTurkeyUnfertilized</defName>
-        <label>turkey egg (unfert.)</label>
-        <description>An unfertilized turkey egg. It can be eaten raw, but it's much, much better cooked.</description>
-        <graphicData>
-            <color>(176,154,128)</color>
-        </graphicData>
-        <statBases>
-            <MarketValue>7.0</MarketValue>
-        </statBases>
-    </ThingDef>
-	
-	<!--Add unfert. ostrich egg def-->
-	<ThingDef ParentName="EggUnfertBase">
-        <defName>EggOstrichUnfertilized</defName>
-        <label>ostrich egg (unfert.)</label>
-        <description>An unfertilized ostrich egg. It can be eaten raw, but it's much, much better cooked.</description>
-        <graphicData>
-            <color>(223,220,210)</color>
-        </graphicData>
-        <statBases>
-            <MarketValue>17.0</MarketValue>
-        </statBases>
-    </ThingDef>
+  <!--Add unfert. ostrich egg def-->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>EggOstrichUnfertilized</defName>
+    <label>ostrich egg (unfert.)</label>
+    <description>An unfertilized ostrich egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(223,220,210)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>17.0</MarketValue>
+    </statBases>
+  </ThingDef>
 </Defs>
