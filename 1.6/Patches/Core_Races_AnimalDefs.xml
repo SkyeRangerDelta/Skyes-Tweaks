@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<!--Add the unfert. turkey egg; remove fert. progression -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Turkey"]/comps/li[@Class = "CompProperties_EggLayer"]</xpath>
+				<value>
+					<eggUnfertilizedDef>EggTurkeyUnfertilized</eggUnfertilizedDef>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="Turkey"]/comps/li[@Class = "CompProperties_EggLayer"]/eggProgressUnfertilizedMax</xpath>
+			</li>
+			
+			<!--Add the unfert. ostrich egg; remove fert. progression -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Ostrich"]/comps/li[@Class = "CompProperties_EggLayer"]</xpath>
+				<value>
+					<eggUnfertilizedDef>EggOstrichUnfertilized</eggUnfertilizedDef>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="Ostrich"]/comps/li[@Class = "CompProperties_EggLayer"]/eggProgressUnfertilizedMax</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
